@@ -12,7 +12,7 @@ function deleteItem() {
 }
 
 function checkOffItem() {
-    $('.shopping-item-toggle').on('click', function(event) {
+    $('ul').on('click', '.shopping-item-toggle', function(event) {
         event.preventDefault();
         const targetItem = $(this).closest("li").find('.shopping-item');
         targetItem.toggleClass('shopping-item__checked');
